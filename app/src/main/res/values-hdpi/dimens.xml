@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_superior">30dp</dimen>
+    <dimen name="padding_inferior">30dp</dimen>
+    <dimen name="gradient_percent">100%p</dimen>
+    <dimen name="text_size">16dp</dimen>
+    <dimen name="ancho_botella">160dp</dimen>
+    <dimen name="alto_botella">160dp</dimen>
+    <dimen name="padding_saludo">20dp</dimen>
+    <dimen name="alto_boton">80dp</dimen>
+    <dimen name="ancho_boton">300dp</dimen>
+    <dimen name="ancho_aviso">300dp</dimen>
+    <dimen name="alto_aviso">75dp</dimen>
+    <dimen name="padding_horizontal">40dp</dimen>
+    <dimen name="alto_vacio">20dp</dimen>
+</resources>
