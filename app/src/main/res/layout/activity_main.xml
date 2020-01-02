@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_superior"
+        android:paddingBottom="@dimen/padding_inferior"
+        android:id="@+id/main_layout"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_saludo"
+            android:text="@string/saludo"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/text_saludo"/>
+
+        <ImageView
+            android:layout_width="@dimen/ancho_botella"
+            android:layout_height="@dimen/alto_botella"
+            android:src="@drawable/ic_botella_400dp">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/padding_horizontal"
+            android:background="@color/background_aviso">
+
+            <TextView
+                style="@style/texto_bello"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="Hoy consumiste:"
+                android:textAlignment="textEnd"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/visor"
+                style="@style/texto_bello"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="textEnd">
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/texto_bello"
+                android:textAlignment="textStart"
+                android:text=" mL">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="@dimen/alto_vacio"/>
+
+        <Button
+            android:id="@+id/cargador"
+            android:layout_width="@dimen/ancho_boton"
+            android:layout_height="@dimen/alto_boton"
+            android:text="@string/carga_100"
+            android:textColor="@color/text_saludo"
+            android:background="@color/gradient_end"
+            android:textSize="@dimen/text_size">
+        </Button>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

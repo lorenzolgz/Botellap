@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Botellap</string>
+    <string name="saludo">¡Hola! ¿Ya te hidrataste hoy?</string>
+    <string name="carga_100">Cargar 100mL</string>
+</resources>
