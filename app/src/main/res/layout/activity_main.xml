@@ -73,7 +73,6 @@
         <Space
             android:layout_width="1dp"
             android:layout_height="@dimen/alto_vacio"/>
-
         <Button
             android:id="@+id/cargador"
             android:layout_width="@dimen/ancho_boton"
