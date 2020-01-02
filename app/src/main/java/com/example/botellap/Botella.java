@@ -1,5 +1,7 @@
 package com.example.botellap;
 
+import android.widget.TextView;
+
 public class Botella {
 
     private Integer caudal;
@@ -8,9 +10,9 @@ public class Botella {
         caudal = 0;
     }
 
-    public void cargar100(String aviso) {
+    public void cargar100(TextView visor) {
         caudal += 100;
-        aviso = caudal.toString();
+        visor.setText(caudal.toString());
     }
 
 }

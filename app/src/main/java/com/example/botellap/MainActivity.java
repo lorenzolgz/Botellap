@@ -1,22 +1,21 @@
 package com.example.botellap;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.w3c.dom.Text;
-
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.BindView;
-import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
 
+    Botella botella = new Botella();
+
     @BindView(R.id.visor)
     TextView visor;
-    Botella botella = new Botella();
 
 
     @Override
@@ -29,7 +28,14 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.cargador)
     public void onViewClicked() {
+        botella.cargar100(visor);
+    }
+
+
+    /*
+    @OnClick(R.id.cargador)
+    public void onViewClicked() {
         String visor_text = visor.getText().toString();
         botella.cargar100(visor_text);
-    }
+    }*/
 }
