@@ -10,6 +10,10 @@ public class Botella {
         caudal = 0;
     }
 
+    public Botella(Integer caudal_viejo) {
+        caudal = caudal_viejo;
+    }
+
     public void actualizarVisor(TextView visor){
         visor.setText(caudal.toString());
     }
@@ -19,5 +23,7 @@ public class Botella {
         visor.setText(caudal.toString());
     }
 
+    public int getCaudal() {
+        return caudal;
+    }
 }
-
