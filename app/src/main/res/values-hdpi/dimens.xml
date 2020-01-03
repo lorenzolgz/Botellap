@@ -3,7 +3,7 @@
     <dimen name="padding_superior">30dp</dimen>
     <dimen name="padding_inferior">30dp</dimen>
     <dimen name="gradient_percent">100%p</dimen>
-    <dimen name="text_size">16dp</dimen>
+    <dimen name="text_size">16sp</dimen>
     <dimen name="ancho_botella">160dp</dimen>
     <dimen name="alto_botella">160dp</dimen>
     <dimen name="padding_saludo">20dp</dimen>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -27,16 +26,19 @@
             android:textColor="@color/text_saludo"/>
 
         <ImageView
+            android:id="@+id/foto_botella"
             android:layout_width="@dimen/ancho_botella"
             android:layout_height="@dimen/alto_botella"
-            android:src="@drawable/ic_botella_400dp">
+            android:src="@drawable/botella_nivel_0"
+            android:contentDescription="@string/descripcion_imagen">
 
         </ImageView>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="@dimen/padding_horizontal"
+            android:paddingLeft="@dimen/padding_horizontal"
+            android:paddingRight="@dimen/padding_horizontal"
             android:background="@color/background_aviso">
 
             <TextView
@@ -54,7 +56,7 @@
                 style="@style/texto_bello"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:text="0"
+                android:text="@string/valor_inicial"
                 android:textAlignment="textEnd">
             </TextView>
 
@@ -63,7 +65,7 @@
                 android:layout_weight="1"
                 style="@style/texto_bello"
                 android:textAlignment="textStart"
-                android:text=" mL">
+                android:text="@string/unidad_medida">
 
             </TextView>
 
